@@ -9,6 +9,10 @@
         </form>
 
         <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
+        <form method="POST" name="formDestroy" action="${pageContext.request.contextPath}/destroy">
+            <input type="hidden" name="_token" value="${_token}" />
+            <p><a href="#" onclick="document.formDestroy.submit();">削除</a></p>
+        </form>
 
     </c:param>
 </c:import>
